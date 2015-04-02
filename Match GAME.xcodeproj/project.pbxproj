@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D10F2F041ACBC3E10096DEC8 /* JETSRegisterationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D10F2F031ACBC3E10096DEC8 /* JETSRegisterationViewController.m */; };
+		D10F2F071ACBC43D0096DEC8 /* JETSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D10F2F061ACBC43D0096DEC8 /* JETSLoginViewController.m */; };
+		D10F2F0A1ACBC4880096DEC8 /* JETSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D10F2F091ACBC4880096DEC8 /* JETSHomeViewController.m */; };
+		D10F2F0D1ACBC4C70096DEC8 /* JETSPlayingAreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D10F2F0C1ACBC4C70096DEC8 /* JETSPlayingAreaViewController.m */; };
+		D10F2F101ACBC4FD0096DEC8 /* JETSScoreResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D10F2F0F1ACBC4FD0096DEC8 /* JETSScoreResultViewController.m */; };
 		D19530311AC9E40C00BE5873 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19530301AC9E40C00BE5873 /* Foundation.framework */; };
 		D19530331AC9E40C00BE5873 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19530321AC9E40C00BE5873 /* CoreGraphics.framework */; };
 		D19530351AC9E40C00BE5873 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19530341AC9E40C00BE5873 /* UIKit.framework */; };
@@ -34,6 +39,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D10F2F021ACBC3E10096DEC8 /* JETSRegisterationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JETSRegisterationViewController.h; sourceTree = "<group>"; };
+		D10F2F031ACBC3E10096DEC8 /* JETSRegisterationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JETSRegisterationViewController.m; sourceTree = "<group>"; };
+		D10F2F051ACBC43D0096DEC8 /* JETSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JETSLoginViewController.h; sourceTree = "<group>"; };
+		D10F2F061ACBC43D0096DEC8 /* JETSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JETSLoginViewController.m; sourceTree = "<group>"; };
+		D10F2F081ACBC4870096DEC8 /* JETSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JETSHomeViewController.h; sourceTree = "<group>"; };
+		D10F2F091ACBC4880096DEC8 /* JETSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JETSHomeViewController.m; sourceTree = "<group>"; };
+		D10F2F0B1ACBC4C70096DEC8 /* JETSPlayingAreaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JETSPlayingAreaViewController.h; sourceTree = "<group>"; };
+		D10F2F0C1ACBC4C70096DEC8 /* JETSPlayingAreaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JETSPlayingAreaViewController.m; sourceTree = "<group>"; };
+		D10F2F0E1ACBC4FD0096DEC8 /* JETSScoreResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JETSScoreResultViewController.h; sourceTree = "<group>"; };
+		D10F2F0F1ACBC4FD0096DEC8 /* JETSScoreResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JETSScoreResultViewController.m; sourceTree = "<group>"; };
 		D195302D1AC9E40C00BE5873 /* Match GAME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Match GAME.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D19530301AC9E40C00BE5873 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D19530321AC9E40C00BE5873 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,6 +97,8 @@
 		D19530241AC9E40C00BE5873 = {
 			isa = PBXGroup;
 			children = (
+				D10F2F0E1ACBC4FD0096DEC8 /* JETSScoreResultViewController.h */,
+				D10F2F0F1ACBC4FD0096DEC8 /* JETSScoreResultViewController.m */,
 				D19530361AC9E40C00BE5873 /* Match GAME */,
 				D19530551AC9E40F00BE5873 /* Match GAMETests */,
 				D195302F1AC9E40C00BE5873 /* Frameworks */,
@@ -119,6 +136,14 @@
 				D19530461AC9E40D00BE5873 /* JETSViewController.m */,
 				D19530481AC9E40D00BE5873 /* Images.xcassets */,
 				D19530371AC9E40C00BE5873 /* Supporting Files */,
+				D10F2F021ACBC3E10096DEC8 /* JETSRegisterationViewController.h */,
+				D10F2F031ACBC3E10096DEC8 /* JETSRegisterationViewController.m */,
+				D10F2F051ACBC43D0096DEC8 /* JETSLoginViewController.h */,
+				D10F2F061ACBC43D0096DEC8 /* JETSLoginViewController.m */,
+				D10F2F081ACBC4870096DEC8 /* JETSHomeViewController.h */,
+				D10F2F091ACBC4880096DEC8 /* JETSHomeViewController.m */,
+				D10F2F0B1ACBC4C70096DEC8 /* JETSPlayingAreaViewController.h */,
+				D10F2F0C1ACBC4C70096DEC8 /* JETSPlayingAreaViewController.m */,
 			);
 			path = "Match GAME";
 			sourceTree = "<group>";
@@ -251,8 +276,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D19530471AC9E40D00BE5873 /* JETSViewController.m in Sources */,
+				D10F2F0D1ACBC4C70096DEC8 /* JETSPlayingAreaViewController.m in Sources */,
+				D10F2F101ACBC4FD0096DEC8 /* JETSScoreResultViewController.m in Sources */,
 				D19530411AC9E40D00BE5873 /* JETSAppDelegate.m in Sources */,
 				D195303D1AC9E40C00BE5873 /* main.m in Sources */,
+				D10F2F0A1ACBC4880096DEC8 /* JETSHomeViewController.m in Sources */,
+				D10F2F071ACBC43D0096DEC8 /* JETSLoginViewController.m in Sources */,
+				D10F2F041ACBC3E10096DEC8 /* JETSRegisterationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +491,7 @@
 				D19530611AC9E41400BE5873 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D19530621AC9E41400BE5873 /* Build configuration list for PBXNativeTarget "Match GAMETests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +500,7 @@
 				D19530641AC9E41400BE5873 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
