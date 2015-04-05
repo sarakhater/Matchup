@@ -7,7 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+static NSString *IPADDRESS;
+@interface JETSLoginViewController : UIViewController <NSURLConnectionDataDelegate, NSURLConnectionDelegate>
+{
+   
+    NSData *receivedDate ;
+}
+@property IBOutlet UITextField *usernameTF, *passwordTF;
 
-@interface JETSLoginViewController : UIViewController
 
+
+
+
+-(IBAction)signInButton:(id)sender;
+//-(IBAction)signUpButton:(id)sender;
+-(void)saveUserData;
+-(NSString*)prepareUrl ;
 @end

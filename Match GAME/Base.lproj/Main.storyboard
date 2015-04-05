@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="nkO-RE-HEE">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -17,7 +17,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-118" y="-4"/>
+            <point key="canvasLocation" x="-206" y="-4"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="I4i-Wu-D98">
@@ -55,6 +55,9 @@
                                 <state key="normal" title="Sign In">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="signInButton:" destination="wd0-0k-Imd" eventType="touchUpInside" id="1Ku-rE-fRj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4v-b0-hJr">
                                 <rect key="frame" x="161" y="455" width="55" height="30"/>
@@ -63,7 +66,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fH7-rp-TtE" kind="custom" id="as8-N9-FvY"/>
+                                    <segue destination="fH7-rp-TtE" kind="push" identifier="toSignUpSegue" id="wwv-gZ-zuH"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9zo-v4-jMp">
@@ -87,10 +90,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Rop-ff-rfe"/>
+                    <connections>
+                        <outlet property="passwordTF" destination="IME-7w-jnm" id="ilZ-zv-cId"/>
+                        <outlet property="usernameTF" destination="9zo-v4-jMp" id="R4P-Db-tb9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abE-j0-0JR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="260" y="3"/>
+            <point key="canvasLocation" x="786" y="3"/>
         </scene>
         <!--Registeration View Controller-->
         <scene sceneID="kf2-gA-rPj">
@@ -134,6 +142,9 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="signUpButton:" destination="fH7-rp-TtE" eventType="touchUpInside" id="1DB-3Z-GiV"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jeJ-fI-IJd">
                                 <rect key="frame" x="130" y="132" width="167" height="30"/>
@@ -163,10 +174,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="uiT-fr-dVn"/>
+                    <connections>
+                        <outlet property="passwordTF" destination="R4q-qF-WaK" id="fPc-Lb-0FD"/>
+                        <outlet property="usernameTF" destination="jeJ-fI-IJd" id="4pZ-Aa-06i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ywq-sO-vTN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="709" y="3"/>
+            <point key="canvasLocation" x="1235" y="3"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="QF2-re-dpQ">
@@ -215,7 +231,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="clP-tS-olb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1112" y="-4"/>
+            <point key="canvasLocation" x="1638" y="-4"/>
         </scene>
         <!--Playing Area View Controller-->
         <scene sceneID="8sX-lO-fEv">
@@ -265,7 +281,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9uc-4R-Agb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1489" y="-3"/>
+            <point key="canvasLocation" x="2015" y="-3"/>
         </scene>
         <!--Score Result View Controller-->
         <scene sceneID="RPi-VQ-ZvO">
@@ -348,7 +364,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="49d-iN-qa1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1867" y="-4"/>
+            <point key="canvasLocation" x="2393" y="-4"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uuF-Q0-jg9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nkO-RE-HEE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bSV-mk-PAl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wd0-0k-Imd" kind="relationship" relationship="rootViewController" id="xPp-nu-zrv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dbn-Vu-PVP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="260" y="3"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

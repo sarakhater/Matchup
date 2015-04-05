@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JETSRegisterationViewController : UIViewController
+@interface JETSRegisterationViewController : UIViewController{
+   // NSString *IPADDRESS;
+    
+    NSData *receivedDate ;
+}
 
+@property IBOutlet UITextField *usernameTF, *passwordTF;
+@property NSString * IP_ADDRESS;
+
+
+
+-(IBAction)signUpButton:(id)sender;
+-(NSString*)prepareURL ;
 @end
